@@ -79,8 +79,8 @@ const getContent=(chapter)=>{
 getList((code)=>{
   if(code.code==1){
     var urlList = JSON.parse(fs.readFileSync('list.json', 'utf8'))
-    for (let i = 0; i < urlList.length; i++) {
-    // for (let i = 0; i < 5; i++) {
+    // for (let i = 0; i < urlList.length; i++) {
+    for (let i = 0; i < 2; i++) {
       getContent(urlList[i])
     }
   }
